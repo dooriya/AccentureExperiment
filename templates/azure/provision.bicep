@@ -1,25 +1,25 @@
 @secure()
 param provisionParameters object
 // Resources for identity
-module userAssignedIdentityProvision './provision/identity.bicep' = {
-  name: 'userAssignedIdentityProvision'
-  params: {
-    provisionParameters: provisionParameters
-  }
-}
+// module userAssignedIdentityProvision './provision/identity.bicep' = {
+//   name: 'userAssignedIdentityProvision'
+//   params: {
+//     provisionParameters: provisionParameters
+//   }
+// }
 
-output identityOutput object = {
-  teamsFxPluginId: 'fx-resource-identity'
-  identityName: userAssignedIdentityProvision.outputs.identityName
-  identityResourceId: userAssignedIdentityProvision.outputs.identityResourceId
-  identityClientId: userAssignedIdentityProvision.outputs.identityClientId
-}
+// output identityOutput object = {
+//   teamsFxPluginId: 'fx-resource-identity'
+//   identityName: userAssignedIdentityProvision.outputs.identityName
+//   identityResourceId: userAssignedIdentityProvision.outputs.identityResourceId
+//   identityClientId: userAssignedIdentityProvision.outputs.identityClientId
+// }
+
 // Resources for bot
 module botProvision './provision/bot.bicep' = {
   name: 'botProvision'
   params: {
     provisionParameters: provisionParameters
-    userAssignedIdentityId: userAssignedIdentityProvision.outputs.identityResourceId
   }
 }
 

@@ -6,5 +6,13 @@
             "short": "SampleNotificationBot",
             "full": "Full name for SampleNotificationBot"
         }
+    },
+    "azure": {
+        "subscriptionId": "2eed8d0c-c7d1-4f29-83bf-b669df0fe40f",
+        "resourceGroupName": "existing_notification_bot-prod-rg"
+    },
+    "bot": {
+        "appId": "4c590cbc-f55e-4536-944e-e0214641b562",
+        "appPassword": "{{$env.BOT_PASSWORD_PROD}}"
     }
 }

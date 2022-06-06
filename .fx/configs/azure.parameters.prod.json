@@ -6,7 +6,14 @@
       "value": {
         "resourceBaseName": "samplenotiprod1bc40b",
         "botAadAppClientId": "{{state.fx-resource-bot.botId}}",
-        "botAadAppClientSecret": "{{state.fx-resource-bot.botPassword}}"
+        "botAadAppClientSecret": "{{state.fx-resource-bot.botPassword}}",
+
+        "existingSubscription": "2eed8d0c-c7d1-4f29-83bf-b669df0fe40f",
+        "existingResourceGroup": "existing_notification_bot-prod-rg",
+        "botServerfarmsName": "existingnoprod4880fabot",
+        "botWebAppSKU": "B1",
+        "botSitesName": "existingnoprod4880fabot",
+        "botServiceName": "existingnoprod4880fa"
       }
     }
   }

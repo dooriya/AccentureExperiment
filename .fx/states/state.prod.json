@@ -1,0 +1,30 @@
+{
+    "fx-resource-appstudio": {
+        "tenantId": "9cebf8c7-7a35-483e-ba9f-1e1cb83461aa",
+        "teamsAppId": "985bce3a-225e-47c3-9f8e-c7e5abe6d258",
+        "teamsAppUpdatedAt": 1654499014231
+    },
+    "solution": {
+        "subscriptionId": "2eed8d0c-c7d1-4f29-83bf-b669df0fe40f",
+        "subscriptionName": "Visual Studio Ultimate with MSDN",
+        "tenantId": "9cebf8c7-7a35-483e-ba9f-1e1cb83461aa",
+        "needCreateResourceGroup": false,
+        "resourceGroupName": "existing_notification_bot-prod-rg",
+        "location": "eastasia",
+        "resourceNameSuffix": "348b21",
+        "provisionSucceeded": true
+    },
+    "fx-resource-identity": {},
+    "fx-resource-bot": {
+        "botId": "4c590cbc-f55e-4536-944e-e0214641b562",
+        "botPassword": "{{fx-resource-bot.botPassword}}",
+        "skuName": "B1",
+        "siteName": "existingnoprod4880fabot",
+        "validDomain": "existingnoprod4880fabot.azurewebsites.net",
+        "appServicePlanName": "existingnoprod4880fabot",
+        "botWebAppResourceId": "/subscriptions/2eed8d0c-c7d1-4f29-83bf-b669df0fe40f/resourceGroups/existing_notification_bot-prod-rg/providers/Microsoft.Web/sites/existingnoprod4880fabot",
+        "siteEndpoint": "https://existingnoprod4880fabot.azurewebsites.net"
+    },
+    "fx-resource-cicd": {},
+    "fx-resource-api-connector": {}
+}
